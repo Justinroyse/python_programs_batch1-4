@@ -1,6 +1,2 @@
-def products():
-    a = int(input("Enter the first number: "))
-    b = int(input("Enter the second number: "))
-    print("Result: ", a * b)
-
-products()
+program = [int(input(f"Enter number ({i+1}): ")) for i in range(2)]
+print(program[0] * program[1])
