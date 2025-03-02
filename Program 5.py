@@ -1,5 +1,2 @@
-def divide():
-    first_number = float(input("First number: "))
-    second_number = float(input("Second number: "))
-    print("Result: ", first_number / second_number)
-divide()
+program = [float(input(f"Enter number ({i+1}): ")) for i in range(2)]
+print(float(program[0] / program[1]))

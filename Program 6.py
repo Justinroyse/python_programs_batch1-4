@@ -1,6 +1,2 @@
-def exponent():
-    first_number = int(input("First number: "))
-    second_number = int(input("Second number: "))
-    print("Result: ", first_number ** second_number)
-
-exponent()
+program = [int(input(f"Enter number ({i+1}): ")) for i in range(2)]
+print(program[0] ** program[1])
