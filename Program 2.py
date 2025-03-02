@@ -1,9 +1,5 @@
-def equal():
-    first_number = int(input("Enter first number: "))
-    second_number = int(input("Enter second number: "))
-
-    if first_number == second_number: print("Result: Equal")
-    elif second_number != first_number: print("Result: Not Equal")
-
-
-equal()
+program = [int(input(f"Enter number ({i+1}): ")) for i in range(2)]
+if program[0] == program[1]:
+    print("Equal")
+else:
+    print("Not Equal")
