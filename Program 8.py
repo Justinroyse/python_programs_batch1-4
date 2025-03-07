@@ -1,5 +1,5 @@
-program = -1
-while program != 100:
-    program += 1
-    if program % 2 != 0:
-        print(program)
+counter = -1
+while counter != 100:
+    counter += 1
+    if counter % 2 != 0:
+        print(counter)
