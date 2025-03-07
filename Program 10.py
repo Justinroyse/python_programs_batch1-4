@@ -1,11 +1,12 @@
-num1 = int(input("Enter the first number: "))
-num2 = int(input("Enter the second number: "))
+num1 = int(input("Enter number (1):  "))
+num2 = int(input("Enter number (2):  "))
 
 if num1 < num2:
-    numbers = list(range(num1, num2 + 1))
-elif num1 > num2:
-    numbers = list(range(num2, num1 + 1))
-else:
-    numbers = [num1]
+    operation = list(range(num1, num2 + 1))
 
-print(numbers)
+elif num1 > num2:
+    operation = list(range(num2, num1 + 1))
+else:
+    pass
+
+print(operation)
