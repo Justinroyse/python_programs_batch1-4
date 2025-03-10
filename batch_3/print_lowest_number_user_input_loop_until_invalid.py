@@ -3,8 +3,9 @@ stored_numbers = []
 #Create while loop for the logic and iterating
 while True:
     user_input = int(input("Enter number: "))
-    stored_numbers.append(user_input)
-    if stored_numbers[0:] != stored_numbers[1:]:
+
+    if user_input in stored_numbers:
         print("Unique")
     else:
+        stored_numbers.append(user_input)
         print("Duplicate")
