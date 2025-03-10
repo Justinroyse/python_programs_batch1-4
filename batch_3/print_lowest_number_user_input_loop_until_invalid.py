@@ -5,7 +5,7 @@ while True:
     user_input = int(input("Enter number: "))
 
     if user_input in stored_numbers:
-        print("Unique")
+        print("Duplicate")
     else:
         stored_numbers.append(user_input)
-        print("Duplicate")
+        print("Unique")
