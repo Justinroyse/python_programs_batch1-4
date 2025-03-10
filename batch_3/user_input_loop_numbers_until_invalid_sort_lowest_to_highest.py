@@ -10,7 +10,8 @@ while True:
         break
 
 if stored_numbers:
-    print(stored_numbers.sort(reverse=False))
+    stored_numbers.sort(reverse=False)
+    print(stored_numbers)
 else:
     print("No valid input detected")
 
