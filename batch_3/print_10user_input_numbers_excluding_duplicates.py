@@ -6,3 +6,6 @@ def duplicate_checker(given):
             print(items)
 
 #for loop inside a list used for user number inputs
+program = [int(input(f"Enter number ({i+1}): "))
+           for i in range(10)]
+print(duplicate_checker(program))
