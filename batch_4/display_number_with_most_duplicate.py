@@ -1,17 +1,23 @@
-#create function to check for duplicates, display duplicate with most number
-def duplicate_checker(given):
+#create function to check for duplicates, display number with most duplicate
+def duplicate_checker(program):
     duplicates = []
-    seen = set()
+    seen = []
+    most_duplicate_number = None
+    max_duplicate = 0
 
-    for numbers in given:
+    for numbers in program:
         if numbers in seen and numbers not in duplicates:
             duplicates.append(numbers)
         else:
-            seen.add(numbers)
-	
-    for numbers in duplicates:
-        highest_checker = duplicates[0]
-        highest_counter = 0
-        
+            seen.append(numbers)
+
+    for numbers in seen:
+        counter = program.count(numbers)
+        if counter > 1 and counter > max_duplicate:
+            most_duplicate_number = numbers
+            max_duplicate = counter
+
+    return most_duplicate_number
+
 #create while loop user input until invalid
 #print result
