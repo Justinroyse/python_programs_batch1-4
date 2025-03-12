@@ -1,7 +1,6 @@
-#create function store list to display highest to lowest user input number
-
 #create while loop for user input until invalid number
 user_input_collection = []
+
 while True:
     try:
         user_input = int(input("Enter number: "))
@@ -10,5 +9,7 @@ while True:
         print("Invalid input, sorting numbers... (Highest to lowest)")
         break
 
-
 #print result
+user_input_collection.sort(reverse=True)
+print(user_input_collection)
+
