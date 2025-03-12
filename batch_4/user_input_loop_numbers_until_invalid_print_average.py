@@ -19,4 +19,4 @@ while True:
         print("Invalid input, printing average...")
         break
 #print result
-average(user_input_collection)
+print(average(user_input_collection))
