@@ -1,12 +1,13 @@
+#create list and counter to store numbers and count odd user input numbers
 store = []
 counter = 0
-
-for i in range(10):
-    program = int(input(f"Enter number ({i+1}):  "))
+#create 10 iterations for user input
+for numbers in range(10):
+    program = int(input(f"Enter number ({numbers+1}):  "))
     store.append(program)
 
-for item in store:
-    if item % 2 != 0:
+for number in store:
+    if number % 2 != 0:
         counter += 1
-
+#print result
 print(counter)

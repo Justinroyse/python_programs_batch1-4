@@ -1,4 +1,5 @@
-program = [int(input(f"Enter a number({i+1}):  ")) for i in range(2)]
+#create list for 2 user input
+program = [int(input(f"Enter a number({numbers+1}):  "))
+           for numbers in range(2)]
+#print biggest number with built-in max() function
 print(max(program))
-
-##test commit

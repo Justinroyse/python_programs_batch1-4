@@ -1,8 +1,11 @@
+#create difference function
 def difference(given):
     operation = given[0]
     for items in given[1:]:
         operation -= items
     return operation
-
-program = [int(input(f"Enter number ({i+1}):  ")) for i in range(10)]
+#create list for 10 user input
+program = [int(input(f"Enter number ({numbers+1}):  "))
+           for numbers in range(10)]
+#use difference function to print program
 print(difference(program))
