@@ -18,6 +18,18 @@ def duplicate_checker(program):
             max_duplicate = counter
 
     return most_duplicate_number
-
 #create while loop user input until invalid
+user_input = []
+while True:
+    try:
+        given = int(input("Enter number: "))
+        user_input.append(given)
+    except ValueError:
+        print("Invalid input, printing most duplicate number...")
+        break
 #print result
+result = duplicate_checker(user_input)
+if result is None:
+    print("No duplicates are found")
+else:
+    print(result)
