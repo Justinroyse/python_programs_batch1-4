@@ -5,7 +5,9 @@ def duplicate_checker(given):
         if stored_items != items:
             print(items)
     return " "
+
 #for loop inside a list used for user number inputs
 program = [int(input(f"Enter number ({i+1}): "))
            for i in range(0,10)]
+
 print(duplicate_checker(program))

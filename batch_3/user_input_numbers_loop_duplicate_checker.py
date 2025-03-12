@@ -1,5 +1,6 @@
 #Create variable for list to store numbers
 stored_numbers = []
+
 #Create while loop for the logic and iterating
 while True:
     user_input = int(input("Enter number: "))

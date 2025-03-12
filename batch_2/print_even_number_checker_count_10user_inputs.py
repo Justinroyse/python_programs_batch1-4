@@ -5,8 +5,10 @@ def even_check(numbers):
         if number % 2 == 0:
             counter += 1
     return counter
+
 #create list for 10 user input
 program = [int(input(f"Enter number ({numbers+1}):  "))
            for numbers in range(10)]
+
 #print result using even_check function
 print(even_check(program))

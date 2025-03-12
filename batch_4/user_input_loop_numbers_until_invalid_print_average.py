@@ -18,5 +18,6 @@ while True:
     except ValueError:
         print("Invalid input, printing average...")
         break
+
 #print result
 print(average(user_input_collection))
